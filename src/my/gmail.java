@@ -23,8 +23,6 @@ public class gmail {
 		WebElement ET = driver.findElement(By.id("username"));
 		WebElement EButton = driver.findElement(By.cssSelector("button[jsname=\"xqKM5b\"]"));
 		String Etext = EButton.getText();
-		String Ettext = ET.getText();
-
 		System.out.println(Etext);
 		ET.sendKeys("ding");
 

@@ -12,6 +12,7 @@ public static void main(String[] args) {
 	WebDriver driver = new ChromeDriver();
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	@SuppressWarnings("unused")
 	WebDriverWait wait =new WebDriverWait(driver,Duration.ofSeconds(10));
 	driver.get("https://www.selenium.dev/downloads/");
 	driver.findElement(By.linkText("4.6.0")).click();

@@ -16,6 +16,7 @@ public class frameidentification {
 		Actions actions = new Actions(driver);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		@SuppressWarnings("unused")
 		WebDriverWait wait =new WebDriverWait(driver,Duration.ofSeconds(10));
 		driver.get("https://jqueryui.com/draggable/");;
 		//No such element Exception Bcz the target element present inside the frame (<iframe>).

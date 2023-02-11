@@ -15,7 +15,6 @@ public class promptPopup {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 		driver.get("https://demoqa.com/alerts");
 		WebElement promtButton = driver.findElement(By.id("promtButton"));
 		JavascriptExecutor jse = (JavascriptExecutor)driver;

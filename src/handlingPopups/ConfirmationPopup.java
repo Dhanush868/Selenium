@@ -3,7 +3,6 @@ package handlingPopups;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,6 +14,7 @@ public class ConfirmationPopup {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		@SuppressWarnings("unused")
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 		driver.get("https://demoqa.com/alerts");
 		WebElement confPopup = driver.findElement(By.id("confirmButton"));

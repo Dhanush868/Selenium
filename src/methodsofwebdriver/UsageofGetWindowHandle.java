@@ -19,6 +19,7 @@ public class UsageofGetWindowHandle {
 	WebElement newWindowButton=driver.findElement(By.id("WindowButton"));
 	newWindowButton.click();
 	Thread.sleep(3000);
+	@SuppressWarnings("unused")
 	String parentWindowId= driver.getWindowHandle();
 	driver.manage().window().minimize();
 	driver.close();

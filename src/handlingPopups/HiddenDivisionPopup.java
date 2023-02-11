@@ -12,6 +12,7 @@ public class HiddenDivisionPopup {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		@SuppressWarnings("unused")
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 		driver.get("https://www.flipkart.com/");
 		driver.findElement(By.xpath("//button[text()='✕']")).click();
